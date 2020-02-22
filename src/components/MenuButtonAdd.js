@@ -4,7 +4,6 @@ function MenuButtonAdd(){
 
 const [titleValue, setTitleValue] = useState("")
 const [showing, setShowing] = useState([]);
-let id = Date.now()
 
     function MenuButton(){
         const Handler = (e) => {
