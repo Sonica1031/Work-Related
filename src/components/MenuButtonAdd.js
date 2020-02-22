@@ -12,7 +12,6 @@ const Handler = e =>{
 const submit = (e) => {
 e.preventDefault()
 setShowing ([showing, <MenuButton title={titleValue} group={`${Date.now()}`}/>])
-let button = document.querySelectorAll(".btn");
 }
     return(
         <div>

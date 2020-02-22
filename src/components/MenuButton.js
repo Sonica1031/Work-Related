@@ -7,7 +7,7 @@ function MenuButton(props){
       }
 
     return(
-<form className={"G" + props.group}>y
+<form className={"G" + props.group}>
 <p>{props.title}</p>
   <input type="radio" id={Date.now() + "-yes"} name={`${Date.now()}`} value="yes" required={true}/>
   <label for="Menu-Item-1">Yes</label>
