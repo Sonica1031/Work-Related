@@ -16,8 +16,10 @@ let button = document.querySelectorAll(".btn");
 }
     return(
         <div>
+        <div className="InnerFormDecor">
         <input className="btn" placeholder="Enter Title" onChange={Handler} required />
-        <button onClick={submit}>Add</button>
+        <button className="btnAdd" onClick={submit}>Add</button>
+        </div>
         {showing}
         </div>
     )
