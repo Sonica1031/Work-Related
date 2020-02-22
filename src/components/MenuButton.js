@@ -3,11 +3,11 @@ import React from 'react';
 function MenuButton(props){
   const Handler = (e) => {
     e.preventDefault()
-    document.querySelector(".Group").remove();
+    document.querySelector(".G" + props.group).remove();
       }
 
     return(
-<form className={"Group"}>
+<form className={"G" + props.group}>y
 <p>{props.title}</p>
   <input type="radio" id={Date.now() + "-yes"} name={`${Date.now()}`} value="yes" required={true}/>
   <label for="Menu-Item-1">Yes</label>
