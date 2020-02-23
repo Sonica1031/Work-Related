@@ -10,6 +10,7 @@ const Handler = e =>{
     }
 const onClickHandler = e =>{
     e.preventDefault();
+    setPageTitle("");
     return(
     setNavBar([navBar, <a href={`/${pageTitle}.html`}>{pageTitle}</a>])
     )
