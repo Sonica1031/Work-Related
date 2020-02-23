@@ -18,7 +18,7 @@ const onClickHandler = e =>{
     <div>
     <form>
     <input onChange={Handler} type="text" placeholder="Enter Page Name"/>
-    <div onClick={onClickHandler}>+</div>
+    <div className="plus" onClick={onClickHandler}>+</div>
     </form>
     {navBar}
     </div>

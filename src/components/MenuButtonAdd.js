@@ -4,16 +4,12 @@ function MenuButtonAdd(){
 
 const [titleValue, setTitleValue] = useState("")
 const [showing, setShowing] = useState([]);
+let id = Date.now()
 
     function MenuButton(){
-        const Handler = (e) => {
-          e.preventDefault()
-          let index = showing.findIndex(i => i.id === showing.id)
-                setShowing(showing.splice(index));
-            }
       
           return(
-      <form id={`.G${Date.now()}`}>
+      <form className="FormDeco" id={Date.now()}>
       <p>{titleValue}</p>
         <input type="radio" id={Date.now() + "-yes"} name={`${Date.now()}`} value="yes" required={true}/>
         <label for="Menu-Item-1">Yes</label>
@@ -24,7 +20,6 @@ const [showing, setShowing] = useState([]);
         <div>
           <input type="text" placeholder="Any other comments" />
         </div>
-        <button onClick={Handler}>Remove</button>
       </form>
           )
       }
@@ -36,7 +31,6 @@ const Handler = e =>{
 const submit = (e) => {
     e.preventDefault()
     setShowing ([showing, MenuButton()])
-    localStorage.setItem('showing', showing);
 }
     return(
         <div>
